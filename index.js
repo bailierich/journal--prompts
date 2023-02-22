@@ -6,7 +6,7 @@ const app = express();
 let PORT = process.env.PORT || 3000;
 
 app.get("/", (req, res) => {
-  res.json({ prompt: getRandomPrompt() });
+  res.json(getRandomPrompt());
 });
 
 const server = app.listen(PORT, () =>
